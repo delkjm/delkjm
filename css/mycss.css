@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 body {
-  background: url("../images/Background.png")  no-repeat center center fixed;
+  background:no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -11,6 +11,28 @@ body {
   height: 100%; 
   overflow: hidden;	
 }
+.bg-image{
+	background:url("../images/Background.png")center center fixed;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+	font-family: 'Raleway', sans-serif;
+  margin: 0; 
+  height: 100%; 
+  overflow: hidden;
+}
+.bg-image1{
+	background:url("../images/Background_about.png")center center fixed;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+	font-family: 'Raleway', sans-serif;
+  margin: 0; 
+  height: 100%; 
+  overflow: hidden;
+}
 img {
 	max-width:100%;
 	max-height:100%;
@@ -19,6 +41,16 @@ img {
 	margin-right: auto;
 	
 }
+
+.circle {
+      width: 20vh;
+      height: 20vh;
+      -webkit-border-radius: 20vh;
+      -moz-border-radius: 20vh;
+      border-radius: 20vh;
+      background: rgba(0,3,255,0.42);
+	
+    }
 
 nav {
 	font-size:30px;
@@ -31,11 +63,22 @@ nav {
     cursor: pointer;
 }
 
+.hamburger{
+	z-index: 2;
+}
+
 .arrows:hover {
     opacity: 1;
 
     /** default is 1, scale it to 1.5 */
     transform: scale(1.5, 1.5);
+}
+
+.cards:hover {
+    opacity: 1;
+
+    /** default is 1, scale it to 1.5 */
+    transform: scale(1.1, 1.1);
 }
 
 h1{
@@ -57,13 +100,13 @@ h2{
 .navbar-toggler{
     background-color: #73C17B;
 }
-//.navbar-toggler .line{
+.navbar-toggler .line{
 
     background-color: #fff;
 
 }
 
-//.navbar-nav{
+.navbar-nav{
 	position: absolute;
 	width:15%;
 	z-index: 1;
